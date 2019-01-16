@@ -16,6 +16,22 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
  
+ 
+ <!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library
+ 	scala-library jar包 ,在java调用scala时 如果不导入这个JAR 会报出NoClassDefFoundError
+  -->
+ 
+	
+ 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
+		<dependency>
+		    <groupId>org.scala-lang</groupId>
+		    <artifactId>scala-library</artifactId>
+		    <version>2.11.0</version>
+		</dependency>
+
+	</dependencies>
+ 	 
     <build>
         <defaultGoal>package</defaultGoal>
         <resources>
